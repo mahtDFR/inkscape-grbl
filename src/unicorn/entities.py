@@ -78,7 +78,7 @@ class PolyLine(Entity):
 			for points in self.segments:
 				start = points[0]
 	
-				context.codes.append("(" + str(self) + ")")
+				context.codes.append(";" + str(self))
 				context.go_to_point(start[0],start[1])
 				context.start()
 				for point in points[1:]:
